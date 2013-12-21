@@ -34,7 +34,7 @@
 .animation-content{
     background-color: #dfe8f7;
     color: #696969;
-    font-family: verdana;
+    font-family: Verdana, Arial, sans-serif;
     font-size: 15px;
     width: 100%;
 }
@@ -48,7 +48,8 @@
     margin: 10px;
     color: black;
     text-align: center;
-    letter-spacing: 0.7px;
+    letter-spacing: 1px;
+    /*noinspection CssInvalidElement*/
     word-break: break-word;
     white-space: pre-wrap;
 }
@@ -60,13 +61,15 @@
 
 .tryit-content {
     background-color: #dfe8f7;
-    font-family: verdana;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 .tryit-content .tool td{
     text-align: center;
-    vertical-align: top;
+    vertical-align: middle;
     padding: 3px;
+    color: #294270;
+    font-size: 15px;
 }
 
 /*it for firefox*/
@@ -84,7 +87,7 @@
 .tryit-content .btn {
     padding: 4px 6px;
     font-size: 14px;
-    font-family: Verdana;
+    font-family: Verdana, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.428571429;
     text-align: center;
@@ -97,8 +100,7 @@
 }
 
 .tryit-content .btn:focus {
-    outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: thin dotted #333 5px auto -webkit-focus-ring-color;;
     outline-offset: -2px;
 }
 
@@ -129,6 +131,8 @@ fieldset[disabled] .btn {
 .tryit-content input[type="text"],
 .tryit-content input[type="number"]
 {
+    text-align: center;
+    width: 100px;
     display: inline-block;
     padding: 4px 6px;
     font-size: 14px;

@@ -1,0 +1,67 @@
+<p>
+<!--
+I start to feed one of the pigeons.
+A minute later two more fly by and a minute after that another 3.
+Then 4, and so on (Ex: 1+2+3+4+...). One portion of food lasts a pigeon for a minute,
+but in case there's not enough food for all the birds, the pigeons who arrived first ate first.
+Pigeons are hungry animals and eat without knowing when to stop.
+If I have <strong>N</strong> portions of bird feed, how many pigeons will be fed with at least one portion of wheat?
+-->
+私は鳩の一羽に餌をあげ始めました。
+一分後に二羽が飛んで来て、さらに一分後には三羽が、
+その後に四羽が飛んで来ました(例:1+2+3+4+...)。 餌一つは鳩一羽が一分間食べ続けられる量です。
+しかしこの場合、全ての鳩に十分な餌はありません。鳩達は到着するなり餌を食べ始めます。
+鳩は食事の辞め時を知らない貪欲な動物です。
+もし鳩の餌をN個もっていたら、少なくとも何羽の鳩に小麦の餌を与えられるでしょうか？
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="pigeons" src="{{MEDIA}}pigeons.png" alt="pigeons" width="600px"/>
+    <img class="for_editor_only" title="pigeons" src="{{MEDIA}}pigeons.png" alt="pigeons" width="380px"/>
+</p>
+
+
+<p>
+  <!--
+  <strong>Input: </strong> A quantity of portions wheat as a positive integer.
+  -->
+  <strong>入力: </strong> 与える小麦の量(正の整数)
+</p>
+
+<p>
+  <!--
+  <strong>Output: </strong> The number of fed pigeons as an integer.
+  -->
+  <strong>出力: </strong> 餌を貰える鳩の数(正の整数)
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1) == 1
+checkio(2) == 1
+checkio(5) == 3
+checkio(10) == 6
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どう使われるか: </strong>
+    この問題は、様々状況をモデル化できる事を示します。
+    もちろん、モデルが示すのは限定的な近似値です。
+    しかし多くの場合、完璧なモデルは必要としていません。
+<!--
+    <strong>How it is used: </strong>
+    This task illustrates how we can model various situations.
+    Of course, the model has a limited approximation, but often-times we don't need a perfect model.
+-->
+</p>
+<p>
+  <!--
+    <strong>Precondition: </strong> 0 &lt; N &lt; 10<sup>5</sup>.
+  -->
+    <strong>条件: </strong> 0 &lt; N &lt; 10<sup>5</sup>.
+</p>

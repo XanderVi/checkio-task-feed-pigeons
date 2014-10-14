@@ -1,0 +1,58 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        This mission can be solved using various methods. The easiest is perhaps using simple modeling. Create a counter and use a while loop.
+<pre class="brush: python">
+minute = 0
+fed_pigeons = 0
+pigeons = 0
+while true:
+    minute += 1
+    old_pigeons = pigeons
+    pigeons += minute
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        If for the current step we don't have enough food, then count how many new pigeons we can feed and break the loop. Breaking the loop is very important!
+<pre class="brush: python">
+    if food < pigeons:
+        remains_food = food - old_pigeons
+        if remains_food > 0:
+            fed_pigeons += remains_food
+        break
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        Else, continue feeding.
+<pre class="brush: python">
+food -= pigeons
+fed_pigeons += minute
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        After the loop is broken, you return the result. To solve this mission, simply use each of
+        the concepts outlined in the previous hints. Of course, if you want to better you can always
+        make your code shorter.
+    </div>
+</div>
+
+
+</body>

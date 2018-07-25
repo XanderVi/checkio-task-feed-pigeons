@@ -29,12 +29,21 @@
     <p>
         <strong>Примеры:</strong>
     </p>
-    <pre class="brush: python">
-checkio(1) == 1
-checkio(2) == 1
-checkio(5) == 3
-checkio(10) == 6
-    </pre>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+pigeons(1) == 1
+pigeons(2) == 1
+pigeons(5) == 3
+pigeons(10) == 6
+</pre>
+{% else %}
+<pre class="brush: python">
+pigeons(1) == 1
+pigeons(2) == 1
+pigeons(5) == 3
+pigeons(10) == 6
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">

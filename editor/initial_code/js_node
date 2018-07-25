@@ -9,10 +9,10 @@ var assert = require('assert');
 if (!global.is_checking) {
     // These "asserts" are used for self-checking and not for an auto-testing
 
-    assert.equal(1), 1)
-    assert.equal(2), 1)
-    assert.equal(5), 3)
-    assert.equal(10), 6)
+    assert.equal(pigeons(1), 1)
+    assert.equal(pigeons(2), 1)
+    assert.equal(pigeons(5), 3)
+    assert.equal(pigeons(10), 6)
 
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
